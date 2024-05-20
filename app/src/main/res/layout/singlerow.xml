@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/snakeimgtxt"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000" />
+
+        <TextView
+            android:id="@+id/snakeidtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/snakeimgtxt"
+            android:textIsSelectable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Snake id"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/rescuebytxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:layout_below="@+id/snakeidtxt"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/snakeimgtxt"
+            android:text="Rescued By"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            />
+
+        <TextView
+            android:id="@+id/authorisedbytxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rescuebytxt"
+            android:textIsSelectable="true"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/snakeimgtxt"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/loctxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/authorisedbytxt"
+            android:textIsSelectable="true"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/snakeimgtxt"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/timedatetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loctxt"
+            android:textIsSelectable="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Time and Date"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+        <Button
+            android:id="@+id/downbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timedatetxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Download"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
